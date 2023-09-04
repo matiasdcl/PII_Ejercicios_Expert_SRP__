@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SRP
 {
@@ -18,6 +19,9 @@ namespace SRP
             this.Code = code;
         }
 
+        //pienso que la clase originalmente no cumplìa del todo con el principio SRP ya que la clase book era responsable de saber donde
+        //estaba guardado cuando no era una tarea escencial.
+
         public void ShelveBook(String sector, String shelve)
         {
             this.LibrarySector = sector;
@@ -25,4 +29,5 @@ namespace SRP
         }
 
     }
+
 }
