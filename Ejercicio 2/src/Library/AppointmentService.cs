@@ -3,50 +3,87 @@ using System.Text;
 
 namespace Library
 {
+
+    //el codigo cumple considerablemente con principio SRP ya que la unica responsabilidad es la de validar datos y finalmente la cita medica.
+    //Sin embargo, se podria asignar a otra clase la responsabilidad de retornar el mensaje con el veredicto final de la cita(si fue validada o no).
+    //Por otro lado, la clase  cumple con el patron Expert ya que la clase conoce la informacion para cumplir su funcion de validar datos.
+
     public class AppointmentService
     {
-        public static string CreateAppointment(string name, string id, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName)
+        public static void CreateAppointment(string name, string id,int age, string phoneNumber, DateTime date, string appoinmentPlace, string doctorName, string doctorSpeciality, string appoinmentId)
         {
-            StringBuilder stringBuilder = new StringBuilder("Scheduling appointment...\n");
             Boolean isValid = true;
+            string error;
 
             if (string.IsNullOrEmpty(name))
             {
-                stringBuilder.Append("Unable to schedule appointment, 'name' is required\n");
                 isValid = false;
+                error = name;
+                appointmentResult.AppoinmentIsValid(isValid,error);
             }
 
             if (string.IsNullOrEmpty(id))
             {
-                stringBuilder.Append("Unable to schedule appointment, 'id' is required\n");
                 isValid = false;
+                error = id;
+                appointmentResult.AppoinmentIsValid(isValid,error);
+            }
+
+            if ((age <= 0))
+            {
+                isValid = false;
+                error = age.ToString();
+                appointmentResult.AppoinmentIsValid(isValid,error);
+            }
+            string StrAge = age.ToString();
+            if (string.IsNullOrEmpty(StrAge))
+            {
+                isValid = false;
+                error = StrAge;
+                appointmentResult.AppoinmentIsValid(isValid,error);
             }
 
             if (string.IsNullOrEmpty(phoneNumber))
             {
-                stringBuilder.Append("Unable to schedule appointment, 'phone number' is required\n");
                 isValid = false;
+                error = phoneNumber;
+                appointmentResult.AppoinmentIsValid(isValid,error);
             }
 
             if (string.IsNullOrEmpty(appoinmentPlace))
             {
-                stringBuilder.Append("Unable to schedule appointment, 'appoinment place' is required\n");
                 isValid = false;
+                error = appoinmentPlace;
+                appointmentResult.AppoinmentIsValid(isValid,error);
             }
 
 
             if (string.IsNullOrEmpty(doctorName))
             {
-                stringBuilder.Append("Unable to schedule appointment, 'doctor name' is required\n");
                 isValid = false;
+                error = doctorName;
+                appointmentResult.AppoinmentIsValid(isValid,error);
+            }
+
+            if (string.IsNullOrEmpty(doctorSpeciality))
+            {
+                isValid = false;
+                error = doctorSpeciality;
+                appointmentResult.AppoinmentIsValid(isValid,error);
+            }
+
+            if (string.IsNullOrEmpty(appoinmentId))
+            {
+                isValid = false;
+                error = appoinmentId;
+                appointmentResult.AppoinmentIsValid(isValid,error);
             }
 
             if (isValid)
             {
-                stringBuilder.Append("Appoinment scheduled");
+                appointmentResult.AppoinmentIsValid(isValid, null);
             }
 
-            return stringBuilder.ToString();
         }
 
     }

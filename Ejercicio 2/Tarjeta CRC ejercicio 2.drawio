@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2023-09-04T16:33:04.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 OPR/101.0.0.0" etag="1KkCzXAhKHA0Tl6GoQ1W" version="21.2.3" type="device">
+  <diagram name="Página-1" id="62xkz4-qtUleOZBOJcDo">
+    <mxGraphModel dx="1009" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-1" value="Program" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-2" value="- Iniciar el programa" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="80" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-3" value="AppointmentService" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-4" value="AppointmentService" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-5" value="- Verificar datos" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="280" y="200" width="80" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-6" value="AppointmentResult" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-7" value="AppointmentResult" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-8" value="- Retornar estado final de la cita medica" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="80" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="qNUDY9lJVTLYfH04GP0s-9" value="" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="120" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
